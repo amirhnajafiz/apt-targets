@@ -120,6 +120,7 @@
       <excludeFolder url="file://$MODULE_DIR$/woo-app/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/woo-app/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/woo-app/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/woo-app/vendor/laravel/breeze" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

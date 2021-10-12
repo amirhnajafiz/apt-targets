@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Breeze added" />
+    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Migrate successfully">
+      <change afterPath="$PROJECT_DIR$/woo-app/resources/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woo-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woo-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woo-app/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woo-app/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woo-app/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +18,13 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/woo-app/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,6 +157,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -153,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634052340786</updated>
-      <workItem from="1634052350418" duration="744000" />
+      <workItem from="1634052350418" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="init laravel">
       <created>1634052518885</created>
@@ -169,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634052944073</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Migrate successfully">
+      <created>1634053166284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634053166284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init laravel" />
     <MESSAGE value="Breeze added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Breeze added" />
+    <MESSAGE value="Migrate successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrate successfully" />
   </component>
 </project>

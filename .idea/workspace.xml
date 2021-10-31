@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Migrate successfully">
-      <change afterPath="$PROJECT_DIR$/woo-app/resources/css/bootstrap.css" afterDir="false" />
+    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Bootstrap layout init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woo-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woo-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woo-app/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woo-app/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woo-app/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/woo-app/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/woo-app/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -174,7 +168,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634052340786</updated>
-      <workItem from="1634052350418" duration="1743000" />
+      <workItem from="1634052350418" duration="2154000" />
+      <workItem from="1634390136432" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="init laravel">
       <created>1634052518885</created>
@@ -197,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634053166284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bootstrap init">
+      <created>1634054134707</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634054134707</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bootstrap layout init">
+      <created>1634054380234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634054380234</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,11 +222,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="init laravel" />
     <MESSAGE value="Breeze added" />
     <MESSAGE value="Migrate successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrate successfully" />
+    <MESSAGE value="Bootstrap init" />
+    <MESSAGE value="Bootstrap layout init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap layout init" />
   </component>
 </project>

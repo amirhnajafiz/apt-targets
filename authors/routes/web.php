@@ -1,6 +1,6 @@
 <?php
 
-/** @var \Laravel\Lumen\Routing\Router $router */
+/** @var Router $router */
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,15 @@
 |
 */
 
+use App\Http\Controllers\AuthorController;
+use Illuminate\Support\Facades\Route;
+use Laravel\Lumen\Routing\Router;
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
+});
+
+$router->group(['prefix' => 'api'], function () use ($router) {
+    Route::resource('authors', AuthorController::class)
+        ->only(['index', 'show', 'store', 'update', 'destroy']);
 });

@@ -20,6 +20,12 @@ class AuthorController extends Controller
 
     public function store(Request $request): JsonResponse
     {
+        $this->validate($request, [
+           'name' => 'required',
+           'email' => 'required|email|unique:authors',
+           'location' => 'required|alpha',
+        ]);
+
         $author = Author::create($request->all());
 
         return response()->json($author, 201);
@@ -27,6 +33,11 @@ class AuthorController extends Controller
 
     public function update($id, Request $request): JsonResponse
     {
+        $this->validate($request, [
+            'email' => 'email|unique:authors',
+            'location' => 'alpha',
+        ]);
+
         $author = Author::findOrFail($id);
         $author->update($request->all());
 

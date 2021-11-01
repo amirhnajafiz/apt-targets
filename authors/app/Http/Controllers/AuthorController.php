@@ -33,7 +33,7 @@ class AuthorController extends Controller
         return response()->json($author, 200);
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
         Author::findOrFail($id)->delete();
         return response('Deleted Successfully', 200);

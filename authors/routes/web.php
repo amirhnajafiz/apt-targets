@@ -22,6 +22,13 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'], function () use ($router) {
-    Route::resource('authors', AuthorController::class)
-        ->only(['index', 'show', 'store', 'update', 'destroy']);
+    $router->get('authors',  ['uses' => 'AuthorController@index']);
+
+    $router->get('authors/{id}', ['uses' => 'AuthorController@show']);
+
+    $router->post('authors', ['uses' => 'AuthorController@store']);
+
+    $router->delete('authors/{id}', ['uses' => 'AuthorController@destroy']);
+
+    $router->put('authors/{id}', ['uses' => 'AuthorController@update']);
 });

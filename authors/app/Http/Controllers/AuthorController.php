@@ -18,7 +18,7 @@ class AuthorController extends Controller
         return response()->json(Author::find($id));
     }
 
-    public function create(Request $request): JsonResponse
+    public function store(Request $request): JsonResponse
     {
         $author = Author::create($request->all());
 

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Author controller full methods, basic parts added">
-      <change beforePath="$PROJECT_DIR$/authors/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/authors/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="A bug got fixed in laravel routes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +168,7 @@
       <updated>1634052340786</updated>
       <workItem from="1634052350418" duration="2154000" />
       <workItem from="1634390136432" duration="29000" />
-      <workItem from="1635785218799" duration="1645000" />
+      <workItem from="1635785218799" duration="2035000" />
     </task>
     <task id="LOCAL-00001" summary="init laravel">
       <created>1634052518885</created>
@@ -256,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635786819426</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="A bug got fixed in laravel routes">
+      <created>1635786954095</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1635786954095</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +294,7 @@
     <MESSAGE value="Migration of author added" />
     <MESSAGE value="Author controller added among of the basic routes" />
     <MESSAGE value="Author controller full methods, basic parts added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Author controller full methods, basic parts added" />
+    <MESSAGE value="A bug got fixed in laravel routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="A bug got fixed in laravel routes" />
   </component>
 </project>

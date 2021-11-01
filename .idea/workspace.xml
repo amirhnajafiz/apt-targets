@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Lumen validations added in store and update methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authors/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/authors/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authors/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/authors/composer.lock" afterDir="false" />
-    </list>
+    <list default="true" id="e1f4a742-0822-4b17-bbc4-6669873efba5" name="Default Changelist" comment="Auth0 package added to the project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +168,7 @@
       <updated>1634052340786</updated>
       <workItem from="1634052350418" duration="2154000" />
       <workItem from="1634390136432" duration="29000" />
-      <workItem from="1635785218799" duration="3162000" />
+      <workItem from="1635785218799" duration="3597000" />
     </task>
     <task id="LOCAL-00001" summary="init laravel">
       <created>1634052518885</created>
@@ -279,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635787837598</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Auth0 package added to the project">
+      <created>1635788590465</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635788590465</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +318,7 @@
     <MESSAGE value="A bug got fixed in laravel routes" />
     <MESSAGE value="API first testing successfully" />
     <MESSAGE value="Lumen validations added in store and update methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lumen validations added in store and update methods" />
+    <MESSAGE value="Auth0 package added to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth0 package added to the project" />
   </component>
 </project>

@@ -16,7 +16,7 @@ class Auth0Middleware
      * @return mixed
      * @throws InvalidTokenException
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next): mixed
     {
         $token = $request->bearerToken();
         if(!$token) {

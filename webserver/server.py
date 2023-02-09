@@ -12,7 +12,14 @@ STORAGE_URL = "localhost:10020/store"
 
 @app.route('/api', methods=['GET'])
 def read():
-    return jsonify({"status": "OK"})
+    global STORAGE_URL
+
+    response = requests.get(STORAGE_URL, headers={'Accept': 'application/json'})
+    if response.status_code != 200:
+        print('storage failed')
+        return jsonify({})
+
+    return jsonify(response.json())
 
 
 @app.route('/api', methods=["PUT"])

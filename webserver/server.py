@@ -26,7 +26,12 @@ def read():
 def insert():
     content = request.get_json(silent=True)
 
-    return jsonify(content)
+    response = requests.post(MANAGER_URL, json=content, headers={'Content-type': 'application/json'})
+    if response.status_code != 201:
+        print('manager failed')
+        return jsonify({'status': 'FAIL'})
+
+    return jsonify({'status': 'OK'})
 
 
 if __name__ == "__main__":

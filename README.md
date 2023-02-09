@@ -31,7 +31,7 @@ curl -X POST -d '{}' localhost:10021/
 Python service for handling users.
 
 ```shell
-curl -X PUT -d '{}' localhost:8080/api
+curl -X PUT -H 'Content-type: application/json' -d '{}' localhost:8080/api
 ```
 
 ```shell

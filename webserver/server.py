@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify
-
+import requests
 
 
 
 app = Flask(__name__)
+
+MANAGER_URL = "localhost:10021/"
+STORAGE_URL = "localhost:10020/store"
 
 
 

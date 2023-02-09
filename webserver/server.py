@@ -14,9 +14,13 @@ STORAGE_URL = "localhost:10020/store"
 def read():
     global STORAGE_URL
 
-    response = requests.get(STORAGE_URL, headers={'Accept': 'application/json'})
-    if response.status_code != 200:
-        print('storage failed')
+    try:
+        response = requests.get(STORAGE_URL, headers={'Accept': 'application/json'})
+        if response.status_code != 200:
+            print('storage failed')
+            return jsonify({})
+    except:
+        print('server error')
         return jsonify({})
 
     return jsonify(response.json())
@@ -26,10 +30,15 @@ def read():
 def insert():
     content = request.get_json(silent=True)
 
-    response = requests.post(MANAGER_URL, json=content, headers={'Content-type': 'application/json'})
-    if response.status_code != 201:
-        print('manager failed')
+    try:
+        response = requests.post(MANAGER_URL, json=content, headers={'Content-type': 'application/json'})
+        if response.status_code != 201:
+            print('manager failed')
+            return jsonify({'status': 'FAIL'})
+    except:
+        print('server error')
         return jsonify({'status': 'FAIL'})
+
 
     return jsonify({'status': 'OK'})
 

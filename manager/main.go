@@ -1,10 +1,16 @@
 package main
 
 import (
+	"bytes"
+	"encoding/json"
 	"errors"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
+)
+
+const (
+	storeAddr = "localhost:10020/store"
 )
 
 type Model struct {
@@ -25,6 +31,20 @@ func main() {
 		if m.Id < 1 {
 			return errors.New("id field should be positive")
 		}
+
+		go func() {
+			var (
+				client = http.Client{}
+				buffer bytes.Buffer
+			)
+
+			_ = json.NewEncoder(&buffer).Encode(m)
+			req, _ := http.NewRequest(http.MethodPut, storeAddr, &buffer)
+
+			if _, er := client.Do(req); er != nil {
+				e.Logger.Error(er)
+			}
+		}()
 
 		return c.String(http.StatusCreated, "OK")
 	})

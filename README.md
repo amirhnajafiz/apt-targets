@@ -23,7 +23,7 @@ curl -X GET localhost:10020/store
 Golang service for processing user requests.
 
 ```shell
-curl -X POST -d '{}' localhost:10021/
+curl -X POST -H 'Content-type: application/json' -d '{}' localhost:10021/
 ```
 
 ### Users

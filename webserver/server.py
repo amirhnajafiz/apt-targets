@@ -19,11 +19,10 @@ def read():
         if response.status_code != 200:
             print('storage failed')
             return jsonify({})
+        return jsonify(response.json())
     except:
         print('server error')
         return jsonify({})
-
-    return jsonify(response.json())
 
 
 @app.route('/api', methods=["PUT"])

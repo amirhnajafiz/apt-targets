@@ -4,6 +4,11 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+type Model struct {
+	Name          string `json:"name"`
+	StudentNumber string `json:"student_number"`
+}
+
 func main() {
 	app := fiber.New()
 

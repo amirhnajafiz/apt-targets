@@ -35,11 +35,11 @@ func main() {
 		go func() {
 			var (
 				client = http.Client{}
-				buffer bytes.Buffer
 			)
 
-			_ = json.NewEncoder(&buffer).Encode(m.Value)
-			req, _ := http.NewRequest(http.MethodPut, storeAddr, &buffer)
+			buffer, _ := json.Marshal(m.Value)
+			req, _ := http.NewRequest(http.MethodPut, storeAddr, bytes.NewReader(buffer))
+			req.Header.Add("Content-type", "application/json")
 
 			if _, er := client.Do(req); er != nil {
 				e.Logger.Error(er)

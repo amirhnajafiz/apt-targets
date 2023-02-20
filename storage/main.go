@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gofiber/fiber/v2"
@@ -21,13 +22,17 @@ func main() {
 	})
 
 	app.Put("/store", func(ctx *fiber.Ctx) error {
-		var m Model
+		m := new(Model)
 
-		if e := ctx.BodyParser(&m); e != nil {
+		if e := ctx.BodyParser(m); e != nil {
+			log.Println(e)
+
 			return e
 		}
 
-		storage = append(storage, m)
+		storage = append(storage, *m)
+
+		log.Println(len(storage))
 
 		return ctx.SendStatus(http.StatusCreated)
 	})

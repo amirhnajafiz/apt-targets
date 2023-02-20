@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	storeAddr = "localhost:10020/store"
+	storeAddr = "http://localhost:10020/store"
 )
 
 type Model struct {
@@ -38,7 +38,7 @@ func main() {
 				buffer bytes.Buffer
 			)
 
-			_ = json.NewEncoder(&buffer).Encode(m)
+			_ = json.NewEncoder(&buffer).Encode(m.Value)
 			req, _ := http.NewRequest(http.MethodPut, storeAddr, &buffer)
 
 			if _, er := client.Do(req); er != nil {

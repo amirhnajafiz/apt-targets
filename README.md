@@ -4,29 +4,7 @@
 
 <br />
 
-## Example
-
-### Storage
-
-Golang service for storing objects in database and read objects from storage.
-
-```shell
-curl -X PUT -d '{}' localhost:10020/store
-```
-
-```shell
-curl -X GET localhost:10020/store
-```
-
-### Manager
-
-Golang service for processing user requests.
-
-```shell
-curl -X POST -H 'Content-type: application/json' -d '{}' localhost:10021/
-```
-
-### Users
+### APIs
 
 Python service for handling users.
 

@@ -9,7 +9,7 @@
 Python service for handling users.
 
 ```shell
-curl -X PUT -H 'Content-type: application/json' -d '{}' localhost:8080/api
+curl -X PUT -H 'Content-type: application/json' -d '{"id": 100, "value": {"name": "amir", "student_number": "9831065"}}' localhost:8080/api
 ```
 
 ```shell

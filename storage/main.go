@@ -32,8 +32,6 @@ func main() {
 
 		storage = append(storage, *m)
 
-		log.Println(len(storage))
-
 		return ctx.SendStatus(http.StatusCreated)
 	})
 

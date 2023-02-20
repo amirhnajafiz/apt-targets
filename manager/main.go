@@ -38,6 +38,7 @@ func main() {
 			)
 
 			buffer, _ := json.Marshal(m.Value)
+
 			req, _ := http.NewRequest(http.MethodPut, storeAddr, bytes.NewReader(buffer))
 			req.Header.Add("Content-type", "application/json")
 

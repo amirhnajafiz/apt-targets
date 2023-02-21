@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"log"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -31,6 +32,8 @@ func main() {
 		if m.Id < 1 {
 			return errors.New("id field should be positive")
 		}
+
+		log.Println("[POST] request from webserver")
 
 		go func() {
 			var (

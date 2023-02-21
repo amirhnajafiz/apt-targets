@@ -18,6 +18,8 @@ func main() {
 	app := fiber.New()
 
 	app.Get("/store", func(ctx *fiber.Ctx) error {
+		log.Println("[GET] request from webserver")
+
 		return ctx.JSON(storage)
 	})
 
@@ -29,6 +31,8 @@ func main() {
 
 			return e
 		}
+
+		log.Println("[PUT] request from manager")
 
 		storage = append(storage, *m)
 

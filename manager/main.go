@@ -45,8 +45,10 @@ func main() {
 			req, _ := http.NewRequest(http.MethodPut, storeAddr, bytes.NewReader(buffer))
 			req.Header.Add("Content-type", "application/json")
 
-			if _, er := client.Do(req); er != nil {
+			if resp, er := client.Do(req); er != nil {
 				e.Logger.Error(er)
+			} else {
+				log.Printf("[RESPONSE] storage status code: %d\n", resp.StatusCode)
 			}
 		}()
 

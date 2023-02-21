@@ -42,6 +42,12 @@ to be scaled even if there is no need for it.
 
 Creating a python service for handling users, which uses two other Golang services for managing and storing.
 
+<div align="center">
+    <img src="assets/diagram.png" />
+</div>
+
+<br />
+
 ### Endpoints
 
 ```shell

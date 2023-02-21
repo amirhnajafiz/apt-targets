@@ -4,6 +4,9 @@
 
 <br />
 
+In this repository we are going to talk about microservice architecture. After that we are goig
+to create a simple microservice example.
+
 ## What is Microservice?
 
 Microservices are an architectural and organizational approach to software development
@@ -57,3 +60,13 @@ curl -X PUT -H 'Content-type: application/json' -d '{"id": 100, "value": {"name"
 ```shell
 curl -X GET localhost:8080/api
 ```
+
+<br />
+
+## Resources
+
+Read more about microservices:
+
+- [https://microservice.io](https://microservices.io/)
+- [https://aws.amazon.com](https://aws.amazon.com/microservices/)
+- [https://ibm.com](https://www.ibm.com/topics/microservices)

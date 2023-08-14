@@ -1,0 +1,11 @@
+{
+  "name": "http-server",
+  "version": "0.0.1",
+  "description": "A simple http server which connects to mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amirhnajafiz",
+  "license": "ISC"
+}

@@ -3,3 +3,5 @@
 .vscode/
 main
 config.yaml
+
+node_modules/

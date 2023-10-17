@@ -36,7 +36,7 @@ jobs:
           context: ./graphql
           file: ./graphql/Dockerfile
           push: true
-          tags: ${{ env.DOCKER_USER }}/test-graphql:${{ steps.vars.outputs.tag }}
+          tags: ${{ env.DOCKER_USER }}/test-target:graphql-${{ steps.vars.outputs.tag }}
       
       - name: Build and push Docker image (grpc)
         uses: docker/build-push-action@v2
@@ -44,7 +44,7 @@ jobs:
           context: ./grpc
           file: ./grpc/Dockerfile
           push: true
-          tags: ${{ env.DOCKER_USER }}/test-grpc:${{ steps.vars.outputs.tag }}
+          tags: ${{ env.DOCKER_USER }}/test-target:grpc-${{ steps.vars.outputs.tag }}
       
       - name: Build and push Docker image (http)
         uses: docker/build-push-action@v2
@@ -52,7 +52,7 @@ jobs:
           context: ./http
           file: ./http/Dockerfile
           push: true
-          tags: ${{ env.DOCKER_USER }}/test-http:${{ steps.vars.outputs.tag }}
+          tags: ${{ env.DOCKER_USER }}/test-target:http-${{ steps.vars.outputs.tag }}
       
       - name: Build and push Docker image (media)
         uses: docker/build-push-action@v2
@@ -60,4 +60,4 @@ jobs:
           context: ./media
           file: ./media/Dockerfile
           push: true
-          tags: ${{ env.DOCKER_USER }}/test-media:${{ steps.vars.outputs.tag }}
+          tags: ${{ env.DOCKER_USER }}/test-target:media-${{ steps.vars.outputs.tag }}

@@ -1,0 +1,63 @@
+name: docker-release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+      
+env:
+  DOCKER_USER: ${{ secrets.DOCKER_USER }}
+  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+jobs:
+  push_to_registry:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+        
+      - name: Set output
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
+      
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ env.DOCKER_USER }}
+          password: ${{ env.DOCKER_PASSWORD }}
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Build and push Docker image (graphql)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./graphql
+          file: ./graphql/Dockerfile
+          push: true
+          tags: ${{ env.DOCKER_USER }}/test-graphql:${{ steps.vars.outputs.tag }}
+      
+      - name: Build and push Docker image (grpc)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./grpc
+          file: ./grpc/Dockerfile
+          push: true
+          tags: ${{ env.DOCKER_USER }}/test-grpc:${{ steps.vars.outputs.tag }}
+      
+      - name: Build and push Docker image (http)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./http
+          file: ./http/Dockerfile
+          push: true
+          tags: ${{ env.DOCKER_USER }}/test-http:${{ steps.vars.outputs.tag }}
+      
+      - name: Build and push Docker image (media)
+        uses: docker/build-push-action@v2
+        with:
+          context: ./media
+          file: ./media/Dockerfile
+          push: true
+          tags: ${{ env.DOCKER_USER }}/test-media:${{ steps.vars.outputs.tag }}
